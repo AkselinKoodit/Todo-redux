@@ -1,9 +1,24 @@
 {
   "notes": [
     {
-      "text": "erwrewrwer",
+      "text": "cannon fodder",
       "completed": false,
-      "id": 1
+      "id": 3
+    },
+    {
+      "text": "another task to delete",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "text": "marked for deletion",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "text": "learn to delete note without err",
+      "completed": false,
+      "id": 6
     }
   ]
 }

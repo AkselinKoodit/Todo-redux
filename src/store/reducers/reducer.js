@@ -5,10 +5,14 @@ import noteServices from '../../services/notes';
 
 const reducer = (state = [], action) => {
   switch (action.type) {
-    case actionTypes.REMOVE_TODO:
-      console.log(action.id);
+    // case actionTypes.REMOVE_TODO:
+    //   console.log(action.id);
+    //   // const noteToDelete = state.find((n) => n.id === action.payload);
+    //   return { ...state };
+    case actionTypes.DELETE_NOTE:
       // const noteToDelete = state.find((n) => n.id === action.payload);
-      return [...state];
+      // return { ...state };
+      return action.data;
 
     case actionTypes.INIT_NOTE:
       return action.data;
@@ -32,33 +36,15 @@ const reducer = (state = [], action) => {
   }
 };
 
-export const initializeNotes = () => {
-  return async (dispatch) => {
-    const notes = await noteServices.getAll();
-    dispatch({
-      type: actionTypes.INIT_NOTE,
-      data: notes,
-    });
-  };
-};
-
-export const createNote = (text) => {
-  return async (dispatch) => {
-    const newNote = await noteServices.createNew(text);
-    dispatch({
-      type: actionTypes.ADD_TODO,
-      data: newNote,
-    });
-  };
-};
-export const deleteNote = (id) => {
-  return async (dispatch) => {
-    const deleted = await noteServices.removeTodo(id);
-    dispatch({
-      type: actionTypes.REMOVE_TODO,
-      data: deleted,
-    });
-  };
-};
+// export const deleteNote = (id) => {
+//   return async (dispatch) => {
+//     const deleted = await noteServices.removeNote(id);
+//     dispatch({
+//       // type: actionTypes.REMOVE_TODO,
+//       type: actionTypes.DELETE_NOTE,
+//       id: id,
+//     });
+//   };
+// };
 
 export default reducer;

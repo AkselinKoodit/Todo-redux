@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { createNote } from '../store/reducers/reducer';
+import { createNote } from '../store/actions';
 
 const NewNote = () => {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const NewNote = () => {
   return (
     <form onSubmit={addTodo}>
       <input type="text" placeholder="Enter a note..." name="noteInput"></input>
-      <input type="submit" value="Add note" />
+      <input type="submit" className="btn" value="Add note" />
     </form>
   );
 };

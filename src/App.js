@@ -5,7 +5,7 @@ import Footer from './components/footer';
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { initializeNotes } from './store/reducers/reducer';
+import { initializeNotes } from './store/actions';
 
 const App = () => {
   const dispatch = useDispatch();
