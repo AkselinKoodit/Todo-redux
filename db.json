@@ -1,24 +1,34 @@
 {
   "notes": [
     {
-      "text": "cannon fodder",
-      "completed": false,
-      "id": 3
-    },
-    {
-      "text": "another task to delete",
-      "completed": false,
-      "id": 4
-    },
-    {
-      "text": "marked for deletion",
-      "completed": false,
-      "id": 5
-    },
-    {
       "text": "learn to delete note without err",
-      "completed": false,
+      "completed": true,
       "id": 6
+    },
+    {
+      "text": "Another task",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "text": "reduce font weight on hover",
+      "completed": true,
+      "id": 9
+    },
+    {
+      "text": "Apply for internship",
+      "completed": false,
+      "id": 10
+    },
+    {
+      "text": "take the trash out",
+      "completed": false,
+      "id": 11
+    },
+    {
+      "text": "spend time with the family",
+      "completed": false,
+      "id": 12
     }
   ]
 }
