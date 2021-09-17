@@ -6,11 +6,6 @@
       "id": 6
     },
     {
-      "text": "Another task",
-      "completed": false,
-      "id": 7
-    },
-    {
       "text": "reduce font weight on hover",
       "completed": true,
       "id": 9
@@ -29,6 +24,11 @@
       "text": "spend time with the family",
       "completed": false,
       "id": 12
+    },
+    {
+      "text": "add a new task",
+      "completed": true,
+      "id": 13
     }
   ]
 }
