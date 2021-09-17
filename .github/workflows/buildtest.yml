@@ -15,4 +15,8 @@ jobs:
           node-version: ${{ matrix.node-version}}
       - run: |
           npm i
-          npm run build
+          npm i redux
+          npm i redux-react
+          npm i redux-devtools-extension
+          npm i jsonserver
+          npm start
