@@ -16,7 +16,7 @@ jobs:
       - run: |
           npm i
           npm i redux
-          npm i redux-react
+          npm i react-redux
           npm i redux-devtools-extension
           npm i jsonserver
           npm start
