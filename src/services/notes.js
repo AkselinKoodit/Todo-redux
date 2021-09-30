@@ -25,4 +25,4 @@ export const toggleNote = async (id, note) => {
   return response.data;
 };
 
-export default { getAll, createNew, removeNote };
+// export default { getAll, createNew, removeNote };

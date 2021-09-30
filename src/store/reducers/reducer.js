@@ -1,5 +1,4 @@
 import * as actionTypes from '../actions';
-import noteServices from '../../services/notes';
 // import { useEffect } from 'react';
 // import axios from 'axios';
 
