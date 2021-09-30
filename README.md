@@ -1,5 +1,7 @@
 # To Do App built with Redux
 
+[![Todo CI](https://github.com/AkselinKoodit/Todo-redux/actions/workflows/buildtest.yml/badge.svg)](https://github.com/AkselinKoodit/Todo-redux/actions/workflows/buildtest.yml)
+
 This is a simple app that allows you to add tasks on the list, mark them done and delete them.
 
 ## Tech used:
