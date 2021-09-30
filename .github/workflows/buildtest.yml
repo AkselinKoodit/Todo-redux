@@ -1,4 +1,5 @@
-name: Todo build
+
+name: Todo CI
 on:
   push:
     branches: [master]
@@ -15,8 +16,27 @@ jobs:
           node-version: ${{ matrix.node-version}}
       - run: |
           npm i
-          npm i redux
-          npm i react-redux
-          npm i redux-devtools-extension
-          npm i jsonserver
-          npm start
+          npm run build
+
+# name: Todo build
+# on:
+#   push:
+#     branches: [master]
+#   pull_request:
+#     branches: [master]
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Use Node.js ${{ matrix.node-version}}
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: ${{ matrix.node-version}}
+#       - run: |
+#           npm i
+#           npm i redux
+#           npm i react-redux
+#           npm i redux-devtools-extension
+#           npm i jsonserver
+#           npm start
