@@ -17,7 +17,7 @@ jobs:
       - run: |
           npm install
           npm install redux
-          npm install redux-react
+          npm install react-redux
           npm install redux-devtools-extension
           npm run build
 
