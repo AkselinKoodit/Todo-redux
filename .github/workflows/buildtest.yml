@@ -16,6 +16,10 @@ jobs:
           node-version: ${{ matrix.node-version}}
       - run: |
           npm install
+          npm install redux
+          npm install react-redux
+          npm install redux-thunk
+          npm install redux-devtools-extension
           npm run build
 
 
